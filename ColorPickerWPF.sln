@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{2B476994-0BFA-4D17-A968-4A022CDFDF9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "Framework\TestApp\TestApp.csproj", "{2B476994-0BFA-4D17-A968-4A022CDFDF9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerWPF", "ColorPickerWPF\ColorPickerWPF.csproj", "{2337666F-448B-4D58-9A31-12876915CEBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerWPF", "Framework\ColorPickerWPF\ColorPickerWPF.csproj", "{2337666F-448B-4D58-9A31-12876915CEBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{9104FC60-BF93-45C0-BF49-866F7E38074F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{E609B367-10C9-4027-9F9E-E81A34E4EF91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerWPF.Core", "Core\ColorPickerWPF.Core\ColorPickerWPF.Core.csproj", "{63FFCAA1-E13B-4DC5-8EB4-24BEE771B414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.Core", "Core\TestApp.Core\TestApp.Core.csproj", "{3A4BAD2D-9832-4238-BDFE-F20770715AC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,23 @@ Global
 		{2337666F-448B-4D58-9A31-12876915CEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2337666F-448B-4D58-9A31-12876915CEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2337666F-448B-4D58-9A31-12876915CEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63FFCAA1-E13B-4DC5-8EB4-24BEE771B414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FFCAA1-E13B-4DC5-8EB4-24BEE771B414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FFCAA1-E13B-4DC5-8EB4-24BEE771B414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FFCAA1-E13B-4DC5-8EB4-24BEE771B414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A4BAD2D-9832-4238-BDFE-F20770715AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A4BAD2D-9832-4238-BDFE-F20770715AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A4BAD2D-9832-4238-BDFE-F20770715AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A4BAD2D-9832-4238-BDFE-F20770715AC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B476994-0BFA-4D17-A968-4A022CDFDF9D} = {9104FC60-BF93-45C0-BF49-866F7E38074F}
+		{2337666F-448B-4D58-9A31-12876915CEBB} = {9104FC60-BF93-45C0-BF49-866F7E38074F}
+		{63FFCAA1-E13B-4DC5-8EB4-24BEE771B414} = {E609B367-10C9-4027-9F9E-E81A34E4EF91}
+		{3A4BAD2D-9832-4238-BDFE-F20770715AC2} = {E609B367-10C9-4027-9F9E-E81A34E4EF91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {498DEDBC-C50C-4A2E-9A5A-0AB68DAC0A12}

@@ -7,7 +7,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using ColorPickerWPF.Code;
-using ColorPickerWPF.Properties;
 using UserControl = System.Windows.Controls.UserControl;
 
 namespace ColorPickerWPF

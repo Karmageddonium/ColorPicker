@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\colorpicker1.png" />
+    <None Remove="Resources\colorpicker2.png" />
+    <None Remove="Resources\icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WriteableBitmapEx" Version="1.6.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\colorpicker1.png" />
+    <Resource Include="Resources\colorpicker2.png" />
+    <Resource Include="Resources\icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ColorPickerControl.xaml.cs">
+      <DependentUpon>ColorPickerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ColorPickerSwatch.xaml.cs">
+      <DependentUpon>ColorPickerSwatch.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ColorPickerWindow.xaml.cs">
+      <DependentUpon>ColorPickerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ColorPickRow.xaml.cs">
+      <DependentUpon>ColorPickRow.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="SliderRow.xaml.cs">
+      <DependentUpon>SliderRow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="ColorPickerControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ColorPickerSwatch.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ColorPickerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ColorPickRow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SliderRow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
