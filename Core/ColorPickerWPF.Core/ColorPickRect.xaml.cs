@@ -19,7 +19,7 @@ namespace ColorPickerWPF.Core
     /// <summary>
     /// Логика взаимодействия для ColorPickRect.xaml
     /// </summary>
-    public partial class ColorPickRect : UserControl
+    public partial class ColorPickRect : BindableUserControl
     {
         public event EventHandler OnPick;
 
@@ -35,9 +35,24 @@ namespace ColorPickerWPF.Core
             }
         }
 
+        private SolidColorBrush colorBrush;
+
+        public SolidColorBrush ColorBrush
+        {
+            get
+            {
+                (colorBrush ?? (colorBrush = new SolidColorBrush())).Color = Color;
+                return colorBrush;
+            }
+        }
+
         public static readonly DependencyProperty ColorProperty =
             DependencyProperty.Register(nameof(Color), typeof(Color),
-                typeof(ColorPickRect), new FrameworkPropertyMetadata(Colors.White));
+                typeof(ColorPickRect), new FrameworkPropertyMetadata(Colors.White,  
+                    new PropertyChangedCallback((d, a) => 
+                    { 
+                        ((ColorPickRect)d).OnPropertyChanged(nameof(ColorBrush)); 
+                    })));
 
 
         public ColorPickerDialogOptions Options { get; set; }
