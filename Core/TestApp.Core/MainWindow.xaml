@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <core:ColorPickRow HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Options="LoadCustomPalette"/>
+        <StackPanel>
+            <core:ColorPickRow HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Options="LoadCustomPalette"/>
+            <core:ColorPickRect Width="30" Height="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Options="LoadCustomPalette"/>
+        </StackPanel>
+        
     </Grid>
 </Window>
