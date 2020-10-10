@@ -23,10 +23,24 @@ namespace ColorPickerWPF.Core
     {
         public event EventHandler OnPick;
 
-        public Color Color { get; set; }
+        public Color Color
+        {
+            get
+            {
+                return (Color)GetValue(ColorProperty);
+            }
+            set
+            {
+                SetValue(ColorProperty, value);
+            }
+        }
+
+        public static readonly DependencyProperty ColorProperty =
+            DependencyProperty.Register(nameof(Color), typeof(Color),
+                typeof(ColorPickRect), new FrameworkPropertyMetadata(Colors.White));
+
 
         public ColorPickerDialogOptions Options { get; set; }
-
         public ColorPickRect()
         {
             InitializeComponent();
@@ -44,17 +58,10 @@ namespace ColorPickerWPF.Core
                 }
                 if (ColorPickerWindow.ShowDialog(out color, Options, initialColor: initialColor))
                 {
-                    SetColor(color);
+                    Color = color;
                     OnPick?.Invoke(this, EventArgs.Empty);
                 }
             }
-        }
-
-
-        public void SetColor(Color color)
-        {
-            Color = color;
-            ColorDisplayGrid.Background = new SolidColorBrush(color);
         }
     }
 }
