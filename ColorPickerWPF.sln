@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerWPF", "ColorPickerWPF\ColorPickerWPF.csproj", "{7028E44E-407C-4460-A51E-00171036FB36}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{2B476994-0BFA-4D17-A968-4A022CDFDF9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerWPF", "ColorPickerWPF\ColorPickerWPF.csproj", "{2337666F-448B-4D58-9A31-12876915CEBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7028E44E-407C-4460-A51E-00171036FB36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7028E44E-407C-4460-A51E-00171036FB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7028E44E-407C-4460-A51E-00171036FB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7028E44E-407C-4460-A51E-00171036FB36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2B476994-0BFA-4D17-A968-4A022CDFDF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2B476994-0BFA-4D17-A968-4A022CDFDF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B476994-0BFA-4D17-A968-4A022CDFDF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B476994-0BFA-4D17-A968-4A022CDFDF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2337666F-448B-4D58-9A31-12876915CEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2337666F-448B-4D58-9A31-12876915CEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2337666F-448B-4D58-9A31-12876915CEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2337666F-448B-4D58-9A31-12876915CEBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {498DEDBC-C50C-4A2E-9A5A-0AB68DAC0A12}
 	EndGlobalSection
 EndGlobal
